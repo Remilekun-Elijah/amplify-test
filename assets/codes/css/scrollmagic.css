@@ -1,0 +1,52 @@
+/****** SCROLL ANIMATIONS *****/
+
+/* REDEFINE */
+#redefine{
+  position: relative;
+  opacity: 0;
+  bottom: -150px;
+  transition: all 1s;
+}
+
+/* TYPOGRAPHY / MANAGE PENSION / REMINDER / Retire / PERSONALIZE / RETIREMENT*/
+#typography1, #manageP1, #manageP3, #reminder1, #retire1, #retire3, #personalize1, #rCalculator1, #rCalculator3 {
+  opacity: 0;
+  left: -150px;
+  transition: all .7s;
+}
+#typography2, #manageP2, #reminder2, #retire2, #personalize2, #rCalculator2{
+  opacity: 0;
+  right:-150px;
+  transition: all 1s;
+}
+
+/* USER EXPERIENCE */
+#ux1, #project2{
+  opacity: 0;
+  top:-150px;
+  transition: all 1s;
+}
+#ux2,#project1{
+  opacity: 0;
+  bottom:-150px;
+  transition: all 1s;
+}
+
+/* DIGITAL CUSTOMER */
+#digital-customer, #welcome-show{
+  opacity: 0;
+  transform: scale3d(0,0,0);
+  transition: all 1s;
+}
+
+#landing-page-image{
+  opacity: 0;
+  transform: scale3d(1,1.5,0);
+  transition: all .5s;
+}
+
+video{
+  opacity: 0;
+  bottom:-150px;
+  transition: all 1s
+}

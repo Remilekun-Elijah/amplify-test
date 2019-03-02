@@ -1,0 +1,109 @@
+body{
+  overflow-x: hidden;
+  margin-bottom: 80px !important
+}
+
+/******** Nav Brand/Logo ******/
+.brand-sibling{
+  letter-spacing: 8px;
+  position: relative;
+  bottom: 8px;
+  font-size: 9px
+}
+
+/* header caption description text */
+.header-text{
+  font-family:  serif;
+  font-size: 18px
+}
+/* header background image */
+#header-img-section{
+
+  background-image: url("../../images/Asset 2.png");
+  
+}
+
+.header-img{
+  /* width: 50%; */
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0;
+  
+}
+
+/******** Public Class ******/
+.custom-h1{
+  font-size: 50px !important
+}
+.text{
+ /*  font-family: serif; */
+  font-family: serif;
+
+}
+.text-2{
+  font-size: 18px;
+}
+@media(max-width: 767px){
+  .text-xs-center{
+    text-align: center !important;
+    
+  }
+  .d-xs-block{
+    display: block !important;
+  }
+  .d-xs-none{
+    display: none !important;
+  }
+
+  .mt-xs-5{
+    margin-top: 3rem !important;
+  }
+  .mb-xs-5{
+    margin-bottom: 3rem !important;
+  }
+  .pt-xs-5{
+    padding-top: 3rem !important;
+  }
+  .pb-xs-5{
+    padding-bottom: 3rem !important;
+  }
+
+  
+}
+/****** Main part below******/
+
+a:hover>.linksRightArrow{
+  margin-left: 17px;
+}
+.linksRightArrow{
+  font-size: 21px;
+  
+  transition: all .5s;
+}
+a{
+  text-decoration: none !important;
+}
+
+.jumbo{
+  display: block;
+  width:100%;
+  /* margin-top: 160px !important;
+  padding-top: 50px !important; */
+  background: #f7f7f7
+}
+
+/*** Footer ***/
+footer{
+  margin-top: 10rem;
+  color: #000
+}
+
+footer>a>button{
+  border: 1px solid transparent;
+  border-radius: 20px !important;
+  background-color: #dc3545
+}
+
+footer>a>button:hover{
+  background-color: #c92434
+}
