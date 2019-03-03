@@ -21,17 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
     project1 = document.getElementById("project1"),
     project2 = document.getElementById("project2");
 
-  console.log($(typography1).offset().top);
 
     function scrollMagic(element, property, value){
-      if(document.documentElement.scrollTop >= element.offsetTop-400){
-        
+       if (document.documentElement.scrollTop >= element.offsetTop-window.outerHeight/2 ){
+        console.log(window.outerHeight/2);
         $(element).css("opacity", '1');
-    
-
+  
         $(element).css(property, value||'0px');
       
-    
       }else{
         $(element).css("opacity", '0');
         
@@ -53,8 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.onscroll = ()=>{
       video.play();
-      console.log($(redefine).offset().top);
-      console.log("Height: ",document.documentElement.scrollTop, "target: ", redefine.offsetTop );
+     
       scrollMagic(redefine, "bottom");
       scrollMagic(typography1, "left");
       scrollMagic(typography2, "right");
@@ -72,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollMagic( retire1, "left");
       scrollMagic( retire3, "left");
       scrollMagic( retire2, "right");
-      scrollMagic( personalize1, "left");
-      scrollMagic( personalize2, "right");
+      scrollMagic( personalize1, "top");
+      scrollMagic( personalize2, "bottom");
       scrollMagic( rCalculator1, "left");
       scrollMagic( rCalculator3, "left");
       scrollMagic( rCalculator2, "left");
